@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPACE PARANORMAL - TEMOIGNAGES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>.: SPIRIT FRANCE :.</h1>
+        <p class="subtitle">Recensement de témoignages et experiences personnelles de manifestations spirituelles. Site indépendant depuis 2006</p>
+    </header>
+
+    <marquee scrollamount="5">
+        BIENVENUE SUR SPIRIT-FRANCE --- DERNIERE MISE A JOUR : NOVEMBRE 2019 --- ATTENTION AUX ARNAQUES MARABOUTS SUR LE FORUM ---
+    </marquee>
+
+    <div class="main-layout">
+        <main>
+            <div style="background: #330000; padding: 10px; border: 2px dashed red; margin-bottom: 20px; text-align: center;">
+                <b style="color:red">MESSAGE DE LA MODERATION :</b><br>
+                <span style="font-size:0.8em">Le serveur rencontre des problèmes de lenteur. Merci de ne pas uploader d'images de plus de 1Mo. Les posts insultants seront supprimés sans préavis. - Webmaster</span>
+            </div>
+
+            <div style="background: #0f0f0f; border: 1px solid #444; padding: 15px; margin-bottom: 20px;">
+                <label style="color: yellow; font-weight: bold; font-family: Arial;">RECHERCHER DANS LES ARCHIVES :</label><br>
+                <div style="display:flex; gap:5px; margin-top:5px;">
+                    <input type="text" id="search-input" placeholder="Mots-clés (ex: lieu, date, phénomène...)" style="width: 100%;">
+                    <button onclick="doSearch()" style="width: 100px;">OK</button>
+                </div>
+            </div>
+
+            <div class="create-post-box">
+                <h3>+ AJOUTER UN TEMOIGNAGE +</h3>
+                <input type="text" id="new-title" placeholder="Sujet...">
+                <div class="row">
+                    <input type="text" id="new-author" placeholder="Pseudo">
+                    <input type="date" id="new-date">
+                </div>
+                <textarea id="new-content" placeholder="Racontez votre expérience..."></textarea>
+                <button onclick="addNewPost()">Envoyer (Validation Admin)</button>
+            </div>
+
+            <div id="posts-container"></div>
+        </main>
+
+        <aside>
+            <div class="widget">
+                <h3>COMPTEUR</h3>
+                <div style="text-align:center; padding:10px; font-family:'Courier New'; font-weight:bold; color: lime; background:black; border:2px inset white;">
+                    0 4 8 2 1 9
+                </div>
+            </div>
+            
+            <div class="widget">
+                <h3>CONNEXION</h3>
+                <input type="text" placeholder="Login" style="width:90%; margin-bottom:5px;">
+                <input type="password" placeholder="Pass" style="width:90%; margin-bottom:5px;">
+                <button onclick="alert('Erreur 104 : Impossible de se connecter au serveur SQL.')">OK</button>
+                <br><a href="#" style="font-size:0.7em">Mot de passe oublié ?</a>
+            </div>
+
+            <div class="widget">
+                <h3>LIENS UTILES</h3>
+                <ul>
+                    <li><a href="#">Annuaire Éso-Monde</a></li>
+                    <li><a href="#">Fédération Spirite (Lien mort)</a></li>
+                    <li><a href="#">Boutique "L'Oeil de Chat"</a></li>
+                    <li><a href="#">Forum-Actif-Paranormal</a></li>
+                    <li><a href="#">Crops Circles 84</a></li>
+                </ul>
+            </div>
+            
+            <div style="text-align:center; margin-top:50px;">
+                <div style="width:100%; height:200px; background:#ddd; color:black; display:flex; align-items:center; justify-content:center; border:1px solid black; font-size: 0.8em; padding: 5px;">
+                    <b>Rencontrez l'âme soeur<br>dans votre région<br><br>(Cliquez ici)</b>
+                </div>
+                <small>Publicité</small>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Copyright 2006-2024 - Tous droits réservés<br>
+        Optimisé pour Firefox et Chrome<br>
+        <a href="#">Contact</a> - <a href="#">Mentions Légales</a> - <a href="#">Faire un don</a></p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
